@@ -1,0 +1,132 @@
+/* Palette colori:
+   Bianco: #ffffff
+   Nero grafite: #1a1a1a
+   Grigio chiaro: #e6e6e6
+   Rosso ruggine: #b7410e
+   Beige caldo: #f5f0e6
+*/
+
+/* Reset base */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f5f0e6;
+  color: #1a1a1a;
+}
+
+header {
+  display: flex;
+  justify-content: space-between; /* <-- Questo separa titolo e nav */
+  align-items: center;
+  padding: 24px 40px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+header h1 {
+  font-size: 32px;
+  margin: 0;
+  color: #b7410e;
+}
+
+nav {
+  display: flex;
+  gap: 24px;
+}
+
+nav a {
+  font-size: 18px;
+  text-decoration: none;
+  color: #1a1a1a;
+  transition: color 0.2s;
+}
+
+nav a:hover {
+  color: #b7410e;
+}
+
+
+
+/* Hero */
+.hero {
+  height: 600px;
+  background-size: cover;
+  background-position: center;
+  background-color: #e6e6e6;
+  padding-bottom: 30px;
+  margin-bottom: 20px;
+}
+
+/* Main content */
+main {
+  padding: 40px 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+main h2 {
+  font-size: 26px;
+  margin: 0;
+  color: #b7410e;
+}
+
+main .content-block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 64px;
+  gap: 40px;
+}
+
+main .content-block:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+main .content-block img {
+  width: 380px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+  border: 2px solid #e6e6e6;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 32px;
+  background-color: #ffffff;
+  border-top: 1px solid #e6e6e6;
+}
+
+footer p {
+  font-size: 16px;
+  margin: 0;
+  color: #1a1a1a;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+  }
+
+  main .content-block {
+    flex-direction: column !important;
+    text-align: center;
+  }
+
+  main .content-block h2 {
+    font-size: 20px;
+  }
+
+  header h1 {
+    font-size: 28px;
+  }
+
+  header a {
+    font-size: 16px;
+  }
+}
