@@ -106,27 +106,61 @@ footer p {
 }
 
 /* Responsive */
+/* Responsive migliorato */
 @media (max-width: 768px) {
   header {
     flex-direction: column;
     gap: 12px;
     text-align: center;
+    padding: 16px 20px;
+  }
+
+  header h1 {
+    font-size: 24px;
+    margin-bottom: 8px;
+  }
+
+  nav {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  nav a {
+    font-size: 16px;
+  }
+
+  .hero {
+    height: 300px;
+    margin-bottom: 16px;
+  }
+
+  main {
+    padding: 24px 20px;
   }
 
   main .content-block {
     flex-direction: column !important;
+    align-items: center;
     text-align: center;
+    margin-bottom: 48px;
+  }
+
+  main .content-block img {
+    width: 100%;
+    max-width: 320px;
+    margin-bottom: 16px;
   }
 
   main .content-block h2 {
     font-size: 20px;
+    line-height: 1.4;
   }
 
-  header h1 {
-    font-size: 28px;
+  footer {
+    padding: 24px 16px;
   }
 
-  header a {
-    font-size: 16px;
+  footer p {
+    font-size: 14px;
   }
 }
